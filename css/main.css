@@ -1,0 +1,211 @@
+/* start frontend mentor */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+/* End frontend mentor */
+
+
+/* Start variable's */
+
+ :root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+
+/* End variable's */
+
+
+/* Start Global roles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* End Global roles */
+
+
+/*------ start components ------*/
+
+
+/*------ End components ------*/
+
+
+/* -------Start Media Queries------- */
+
+
+/* -----Small----- */
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+
+/* Medium */
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+
+/* Large */
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+
+/* -------End Media Queries------- */
+
+section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 767px) {
+    section {
+        justify-content: center;
+    }
+}
+
+section .container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Very-Light-Gray);
+    padding: 30px 100px;
+}
+
+@media (max-width: 761px) {
+    section .container {
+        padding: 100px 30px 30px;
+    }
+}
+
+section .container .heading {
+    margin: 0px auto 30px;
+    text-align: center;
+    color: var(--Grayish-Blue);
+}
+
+section .heading .head-light {
+    font-size: 24px;
+    font-weight: 300;
+    color: inherit;
+    margin: 0;
+}
+
+section .heading h2 {
+    color: black;
+    font-size: 24px;
+}
+
+section .heading p {
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+section .container .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    align-items: center;
+}
+
+section .container .box {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 9.5px 14px hsla(229.1, 6.4%, 66.1%, 0.31);
+    border-radius: 8px;
+}
+
+section .container .box .box-title {
+    margin-bottom: 15px;
+}
+
+section .container .box p {
+    color: var(--Grayish-Blue);
+    line-height: 1.7;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+section .container .box .image {
+    text-align: right;
+}
+
+section .container .box .image img {
+    max-width: 50px;
+}
+
+section .container .Supervisor {
+    border-top: 5px solid var(--Cyan);
+}
+
+section .container .team {
+    border-top: 5px solid var(--Red);
+}
+
+section .container .karma {
+    border-top: 5px solid var(--Orange);
+}
+
+section .container .carlculator {
+    border-top: 5px solid var(--Blue);
+}
+
+section .container .team-karma {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
